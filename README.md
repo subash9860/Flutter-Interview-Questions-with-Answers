@@ -27,8 +27,7 @@
 	Widgets are nested with each other to build the app. It means your app's root is itself a widget, and all the way down is a widget also. For example, a widget can display something, can define design, can handle interaction, etc.
 
 5.	 What are the two main types of widgets?
-	
-   There are two types of widgets: 1.StatelessWidget : A widget that does not require mutable state. 2. StatefulWidget: A widget that has mutable state.
+	<br>There are two types of widgets: 1.StatelessWidget : A widget that does not require mutable state. 2. StatefulWidget: A widget that has mutable state.
 
 6.	What is the difference between the Stateless and the Stateful widgets?
 
@@ -110,21 +109,29 @@
 18.	What is Fat Arrow Notation in Dart and when do you use it? 
 		
 	The fat arrow syntax is simply a short hand for returning an expression and is similar to  
-		```(){return expression;}```
+	```
+	(){
+		return expression;
+		}
+	```
 
 	The fat arrow is for returning a single line, braces are for returning a code block.
 	Only an expression—not a statement—can appear between the arrow (=>) and the semicolon (;). For example, you can’t put an if statement there, but you can use a conditional expression
 		
-		// Normal function
-		```void function1(int a) {
+	// Normal function
+	```
+	void function1(int a) {
 		  if (a == 3) {
     		print('arg was 3');
   			} else {
     		print('arg was not 3');
   			}
-		}```
-		// Arrow Function
-		```void function2(int a) => print('arg was ${a == 3 ? '' : 'not '}');```
+		}
+	```
+	// Arrow Function
+	```
+	void function2(int a) => print('this is arrow functin');
+	```
 19.	How is Flutter different from a WebView based application?
 		
 	Code you write for a WebView or an app that runs similarly has to go through multiple layers to finally get executed (like Cordova for Ionic). In essence, Flutter leapfrogs that by compiling down to native ARM code to execute on both platforms.
@@ -148,7 +155,7 @@
  		fit: FlexFit.tight,
  		child: Foo(),
 		);
-		```
+	```
 	You may want to use Flexible over Expanded when you want a different fit, useful in some responsive layouts.
 	The difference between FlexFit.tight and FlexFit.loose is that loose will allow its child to have a maximum size while tight forces that child to fill all the available space.
 22.	When to use main Axis Alignment and cross Axis Alignment?
@@ -198,10 +205,12 @@
 33.	Why do we pass functions to widgets?  
 		
 	Functions are first-class objects in Dart and can be passed as parameters to other functions. We pass a function to a widget essentially saying, invoke this function when something happens. Callbacks using interfaces like Android have too much boilerplate code for a simple callback. Dart does both declarations as well as setting up the callback. This becomes much cleaner and organized and helps us avoid unnecessary complications.
-	```	FlatButton(  
+	```	
+	FlatButton(  
   		onPressed: () {  
     	// Do something here  
-  		}  )```
+  		});
+	```
 34.	What are Streams in Flutter/Dart?  
 		
 	Streams provide an asynchronous sequence of data. Data sequences include user-generated events and data read from files. You can process a stream using either await for or listen() from the Stream API. Streams provide a way to respond to errors. There are two kinds of streams: single subscription or broadcast.
@@ -216,8 +225,7 @@
 	
 	Debug mode for a web app means that: The build is not minified and tree shaking has not been performed. The app is compiled with the dartdevc compiler for easier debugging.
 37.	 Whats the difference between double.infinity and MediaQuery?
-	
-I want to be as big as my parent allows (double.infinity). I want to be as big as the screen (MediaQuery).
+	<br>I want to be as big as my parent allows (double.infinity). I want to be as big as the screen (MediaQuery).
 
 38.	What is profile mode and when do you use it?  
 		
@@ -237,8 +245,7 @@ I want to be as big as my parent allows (double.infinity). I want to be as big a
 	The other kind of stream is intended for individual messages that can be handled one at a time. This kind of stream can be used for mouse events in a browser, for example. You can start listening to such a stream at any time, and you get the events that are fired while you listen. More than one listener can listen at the same time, and you can listen again later after canceling a previous subscription.
 
 41.	 Explain Navigator Widget and its push/pop functions in Flutter?
-	
-	The next few sections show how to navigate between two routes, using these steps:Create two routes:
+	<br>The next few sections show how to navigate between two routes, using these steps:Create two routes:
 	Navigate to the second route using Navigator.push(). 
 	Return to the first route using Navigator.pop().
 
@@ -334,7 +341,7 @@ I want to be as big as my parent allows (double.infinity). I want to be as big a
     		yield i;
   			}
 		}
-		```
+	```
 	This function emits a value every second, which increments every time.
 58.	What does a class with a method named ._() mean in Dart/Flutter?  
 		
