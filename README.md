@@ -353,35 +353,68 @@
 	
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 is Dart multithreaded? If not how does it process Future calls?
+
 What is an isolate ?
+
 How isolate works ?
+
 How does isolates talks to each other?
+
 What is an event loop? What are micro tasks?
+
 How does obfuscation work in Flutter? What's the need for it?
+
 Const vs final
+
 Difference between Dev dependencies vs regular dependency
+
 Should we declare a variable to allocate size from media query in build method? why?
+
 How to check if any widget is placed in widget tree?
+
 Difference between mounted vs past-franse callback
+
 When and why should we use widget binding observer?
+
 What is InheritedWidget? Why/when do we use it? How to pass data through InheritedWidget and access it from other widgets?
+
 AOT vs JIT compiler? In Flutter which compiler gets used in which cases?
+
 AOT vs JIT combiler advantages and disadvantages
+
 BehaviourSubject and RxDart
+
 Inherited widget is Provider which is is better and why?
+
 what is vsync?
+
 what are mixins? Give an example of mixin.
+
 Do mixins solve the diamond problem?
+
 What is tree shaking ? Disadvantages of tree shaking
+
 Dependency Injection and it's disadvantages
+
 How to overcome problems in low latency network? what should be taken care in this case?
+
 What are the drawbacks of Singleton network?
+
 SendPort.send() vs Isolate.exit() , what's the difference?
+
 Immulibility related questions in Flutter
+
 SizedBox vs Container
+
 Should we do Future calls inside build method? If not why?
+
 factory constructor vs const constructor
+
 What is BuildContext?
+
 How does build method work? behind the scene what happens?
+
 How to ensure security in mobile apps?
+
 What is man in the middle attack? how to prevent that?
+
